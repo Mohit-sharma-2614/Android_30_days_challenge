@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
         }
         val btnExciplitIntent = findViewById<Button>(R.id.btnExciplitIntent)
         btnExciplitIntent.setOnClickListener(){
-            
+            intent = Intent(applicationContext,SecondActivity::class.java)
+            startActivity(intent)
         }
     }
 }
